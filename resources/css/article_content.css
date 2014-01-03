@@ -1,0 +1,115 @@
+.article {
+    background: #dfd;
+    color: #000;
+    width: 1020px;
+    margin-top: 5px;
+    border: 2px solid #ff0000;
+}
+
+.article .article_title {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.article .article_content {
+    width: 1004px;
+    margin: 0 10px;
+}
+
+.article .tag_list a {
+    margin-right: 5px;
+}
+
+.article .article_info {
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.article .article_info img {
+    float: none;
+}
+
+.article_ad {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.content .comment_box {
+    width: 1024px;
+    background: #444;
+}
+
+.comment_box .comment_box_title {
+    font-size: 24px;
+    width: 100%;
+    text-indent: 20px;
+    background: #00cc00;
+    color: #000;
+    height: 30px;
+    line-height: 30px;
+}
+
+.comment_box .comment_list {
+    width: 100%;
+    border-top: 1px solid #fff;
+    background: #fff;
+    color: #000;
+}
+
+.comment_box .comment_list a {
+    color: #333;
+}
+
+.comment_box .comment_list ul {
+    width: 100%;
+}
+
+.comment_box .comment_list li {
+    border-bottom: 1px solid #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #afa), color-stop(1, #dfd));
+    background-image: -moz-linear-gradient(top, #afa, #dfd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#afa', endColorstr='#dfd', GradientType='0');
+    width: 1004px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.comment_box .comment_list .pager {
+    color: #fff;
+}
+
+.comment_box .comment_list li .author {
+    width: 50%;
+    text-align: left;
+    text-indent: 10px;
+}
+
+.comment_box .comment_list li .time {
+    text-align: right;
+    float: right;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.comment_box .comment_list li .comment_content {
+    clear: both;
+}
+
+.input_panel {
+    padding-left: 10px;
+    width: 1010px;
+    background: #cff;
+}
+
+.input_panel .new_comment {
+    width: 100%;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+.input_panel button {
+    margin: 10px 0;
+}

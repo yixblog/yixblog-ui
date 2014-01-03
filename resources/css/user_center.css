@@ -1,0 +1,224 @@
+.left_box {
+    width: 300px;
+    background: #555;
+    height: 400px;
+}
+
+.left_box .title {
+    width: 100%;
+    background: #558;
+    text-indent: 10px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+.left_box #menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.left_box #menu li {
+    cursor: pointer;
+    margin: 10px;
+    width: 278px;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 24px;
+    line-height: 30px;
+    border: 1px solid #aaaaaa;
+}
+
+.left_box #menu .ui-selecting {
+    background: #aaa;
+}
+
+.left_box #menu .ui-selected {
+    background: #777;
+}
+
+.right_box {
+    background: #222;
+    width: 723px;
+    border-left: 1px solid #888;
+    height: 400px;
+    overflow: hidden;
+}
+
+.inner {
+    white-space: nowrap;
+    width: 400%;
+}
+
+.right_box .box_item {
+    width: 723px;
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.right_box .box_item .tab_box {
+    width: 713px;
+    overflow: hidden;
+}
+
+.right_box .box_item .tab_box>ul {
+    width: 703px;
+}
+
+.right_box .box_item .article_list {
+    width: 700px;
+}
+
+.right_box .box_item .tab_box .ui-tabs-panel .comment_list {
+    width: 674px;
+}
+
+.right_box .box_item .tab_box .ui-tabs-panel .comment_list ul, .right_box .box_item .article_list ul {
+    width: 672px;
+    border-left: 1px dotted #335;
+    margin-top: 3px;
+}
+
+.right_box .box_item .article_list ul {
+    width: 698px;
+}
+
+.right_box .box_item .tab_box .ui-tabs-panel .comment_list dt, .right_box .box_item .article_list dt {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.right_box .box_item .img_box{
+    width: 720px;
+}
+
+.right_box .box_item .img_box .img_item{
+    width: 218px;
+    height: 200px;
+    border: 1px solid #afafaf;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.right_box .box_item .img_box .img_item img{
+    width: 218px;
+}
+
+
+.right_box .box_item .img_box .img_item .delete{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 16px;
+    width: 16px;
+    background: url(../images/delete.png) no-repeat;
+    display: none;
+    cursor: pointer;
+}
+
+.right_box .box_item .img_box .img_item:hover .delete{
+    display: block;
+}
+
+.ui-tabs-panel .comment_list h3>span, .ui-tabs-panel .comment_list ul>li, .article_list ul>li {
+    border-right: 1px dotted #335;
+    padding: 2px;
+    text-align: left;
+    height: 100%;
+}
+
+.ui-tabs-panel .comment_list h3>span {
+    border: 0;
+}
+
+.ui-tabs-panel .comment_list dt>ul>li, .article_list dt>ul>li {
+    text-align: center;
+}
+
+.ui-tabs-panel .comment_list .article {
+    width: 395px;
+}
+
+.ui-tabs-panel .comment_list h3 .article {
+    width: 385px;
+}
+
+.article_list .article_title {
+    width: 262px;
+}
+
+.article_list .article_title a {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ui-tabs-panel .comment_list .time, .article_list .article_addtime, .article_list .article_edittime {
+    width: 135px;
+    height: 100%;
+}
+
+.time {
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.article_list .article_reply {
+    width: 56px;
+    height: 100%;
+}
+
+.article_list dd .article_reply {
+    background: url(../images/reply.png) 0 no-repeat;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: right;
+}
+
+.article_list .article_active {
+    width: 85px;
+    height: 100%;
+}
+
+.article_list .article_active a {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    float: right;
+    margin-right: 5px;
+}
+
+.edit_btn {
+    background: url(../images/edit.png) no-repeat;
+}
+
+.delete_btn {
+    background: url(../images/delete.png) no-repeat;
+}
+
+.ui-tabs-panel .comment_list .author {
+    width: 127px;
+    text-align: right;
+}
+
+.ui-tabs-panel .comment_list h3 .author {
+    width: 120px;
+}
+
+.ui-tabs-panel .comment_list .content {
+    width: 667px;
+    border-top: 1px solid #ddf;
+}
+
+#new_article_btn {
+    margin: 5px;
+    float: right;
+}
+
+.ui-tabs-panel .comment_list div.comment_content{
+    background: #ffffcc;
+    color: #000;
+}
