@@ -8,12 +8,8 @@
     </formats>
     <fileSets>
         <fileSet>
-            <directory>lib</directory>
-            <outputDirectory>lib</outputDirectory>
-        </fileSet>
-        <fileSet>
             <directory>src</directory>
-            <outputDirectory>lib</outputDirectory>
+            <outputDirectory>src</outputDirectory>
         </fileSet>
         <fileSet>
             <directory>resources</directory>
@@ -23,10 +19,6 @@
     <files>
         <file>
             <source>index.html</source>
-            <outputDirectory>/</outputDirectory>
-        </file>
-        <file>
-            <source>login.html</source>
             <outputDirectory>/</outputDirectory>
         </file>
     </files>

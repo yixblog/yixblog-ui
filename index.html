@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <meta charset="utf-8">
+    <title>佚博客</title>
+
+    <script data-main="src/scripts/index" src="src/scripts/vendor/require.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/icheck/all.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/index.css">
 </head>
 <body>
-
+<div class="container" ng-controller="indexCtrl">
+    <jqcloud ng-model="hotTags" data-width="200" data-height="500"></jqcloud>
+    <button class="btn-success" ng-click="initCloudData()">Fill Data</button>
+</div>
 </body>
 </html>
