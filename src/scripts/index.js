@@ -10,7 +10,8 @@ require.config({
         jqcloud: 'vendor/jqcloud-1.0.4',
         jquery: 'vendor/jquery-1.10.2.min',
         jqueryUI: 'vendor/jquery-ui-1.10.3.custom.min',
-        angularUI: 'vendor/ui-bootstrap-custom-tpls-0.9.0.min'
+        angularUI: 'vendor/ui-bootstrap-custom-tpls-0.9.0.min',
+        lesscss: 'vendor/less-1.6.0.min'
     },
     shim: {
         angular: {
@@ -45,8 +46,9 @@ require([
     'app',
     'angular',
     'jquery',
+    'lesscss',
     'controllers/indexCtrl'
-],function(app,angular,$){
+], function (app, angular, $) {
 
-    angular.bootstrap($("body"),['app']);
-})
+    angular.bootstrap($("body"), ['app']);
+});
