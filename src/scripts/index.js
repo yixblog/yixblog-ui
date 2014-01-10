@@ -47,7 +47,8 @@ require([
     'angular',
     'jquery',
     'lesscss',
-    'controllers/indexCtrl'
+    'controllers/indexCtrl',
+    'directives/angular.jqCloud'
 ], function (app, angular, $) {
 
     angular.bootstrap($("body"), ['app']);
