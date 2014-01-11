@@ -11,7 +11,8 @@ require.config({
         jquery: 'vendor/jquery-1.10.2.min',
         jqueryUI: 'vendor/jquery-ui-1.10.3.custom.min',
         angularUI: 'vendor/ui-bootstrap-custom-tpls-0.9.0.min',
-        lesscss: 'vendor/less-1.6.0.min'
+        lesscss: 'vendor/less-1.6.0.min',
+        angularRoute: 'vendor/angular-route.min'
     },
     shim: {
         angular: {
@@ -29,6 +30,9 @@ require.config({
         angularUI: {
             deps: ['angular'],
             exports: 'angularUI'
+        },
+        angularRoute: {
+            deps: ['angular']
         },
         icheck: {
             deps: ['jquery']
@@ -48,8 +52,8 @@ require([
     'jquery',
     'lesscss',
     'controllers/indexCtrl',
-    'directives/angular.jqCloud'
+    'controllers/homepageCtrl'
 ], function (app, angular, $) {
 
-    angular.bootstrap($("body"), ['app']);
+    angular.bootstrap($("#ng-app"), ['app']);
 });

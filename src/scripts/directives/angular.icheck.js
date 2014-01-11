@@ -1,10 +1,10 @@
 /**
  * Created by yixian on 14-1-3.
  */
-define(['app', 'icheck'], function (app) {
-    app.directive('input', function ($log, $parse) {
+define(['./directives', 'icheck'], function (app) {
+    app.directive('icheck', function ($log, $parse) {
         return {
-            restrict: "E",
+            restrict: "A",
             link: function (scope, element, attrs) {
                 var ngModelGetter = $parse(attrs['ngModel']);
                 var value = $parse(attrs['ngValue'])(scope);

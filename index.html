@@ -8,176 +8,71 @@
     <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="resources/icheck/all.css">
     <link rel="stylesheet" type="text/css" href="resources/css/jqcloud.css">
-    <link rel="stylesheet/less" type="text/css" href="resources/css/index.less">
+    <link rel="stylesheet" type="text/css" href="resources/css/index.css">
 </head>
-<body>
-<div class="container">
-<div class="row">
-    <div class="col-md-12">
-        <nav class="navbar navbar-default" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">佚博客</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Link</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </nav>
-        <img alt="215x95" src="resources/images/logo.png"/>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-4">
-        <jqcloud ng-model="hotTags" data-width="200" data-height="500"></jqcloud>
-    </div>
-    <div class="col-md-8">
-        <span class="label">文字标签</span>
-
-        <div class="tabbable" id="tabs-549095">
-            <ul class="nav nav-tabs">
-                <li class="active">
-                    <a href="#panel-73838" data-toggle="tab">第一部分</a>
-                </li>
-                <li>
-                    <a href="#panel-754378" data-toggle="tab">第二部分</a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" id="panel-73838">
-                    <p>
-                        第一部分内容.
-                    </p>
-                </div>
-                <div class="tab-pane" id="panel-754378">
-                    <p>
-                        第二部分内容.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <table class="table table-hover">
-            <thead>
-            <tr>
-                <th>
-                    编号
-                </th>
-                <th>
-                    产品
-                </th>
-                <th>
-                    交付时间
-                </th>
-                <th>
-                    状态
-                </th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>
-                    1
-                </td>
-                <td>
-                    TB - Monthly
-                </td>
-                <td>
-                    01/04/2012
-                </td>
-                <td>
-                    Default
-                </td>
-            </tr>
-            <tr class="success">
-                <td>
-                    1
-                </td>
-                <td>
-                    TB - Monthly
-                </td>
-                <td>
-                    01/04/2012
-                </td>
-                <td>
-                    Approved
-                </td>
-            </tr>
-            <tr class="error">
-                <td>
-                    2
-                </td>
-                <td>
-                    TB - Monthly
-                </td>
-                <td>
-                    02/04/2012
-                </td>
-                <td>
-                    Declined
-                </td>
-            </tr>
-            <tr class="warning">
-                <td>
-                    3
-                </td>
-                <td>
-                    TB - Monthly
-                </td>
-                <td>
-                    03/04/2012
-                </td>
-                <td>
-                    Pending
-                </td>
-            </tr>
-            <tr class="info">
-                <td>
-                    4
-                </td>
-                <td>
-                    TB - Monthly
-                </td>
-                <td>
-                    04/04/2012
-                </td>
-                <td>
-                    Call in to confirm
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-<div class="row">
-    <div class="span12">
-    </div>
-</div>
-</div>
+<body id="ng-app">
 <div class="container" ng-controller="indexCtrl">
-    <button class="btn btn-success" ng-click="initCloudData()">Fill Data</button>
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">佚博客</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">主页</a></li>
+                        <li><a href="#">文章</a></li>
+                        <li><a href="#">精华</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">子站入口<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">开源中心</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">EVE计算中心</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">注册</a></li>
+                        <li><a href="#">登陆</a></li>
+                        <li><a>欢迎:xxx</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">用户中心<b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">我的文章</a></li>
+                                <li><a href="#">我的评论</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">账号设置</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">退出登陆</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+            <img alt="215x95" src="resources/images/logo.png" class="logo"/>
+        </div>
+    </div>
+    <div class="row"></div>
+    <div class="row">
+        <div ng-view></div>
+    </div>
+    <div class="row">
+        <div class="span12">
+        </div>
+    </div>
 </div>
 </body>
 </html>
