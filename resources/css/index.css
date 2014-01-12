@@ -1,12 +1,14 @@
 body{
     background: #333;
-    -webkit-transition: margin 500ms ease;
-    -moz-transition: margin 500ms ease;
-    -ms-transition: margin 500ms ease;
-    -o-transition: margin 500ms ease;
-    transition: margin 500ms ease;;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
-
+.label{
+    margin-right: 2px;
+}
 .container{
     background: #fff;
 }

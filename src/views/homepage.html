@@ -6,96 +6,42 @@
                 </span>
     </div>
     <jqcloud ng-model="hotTags" data-width="260" data-height="500"></jqcloud>
-    <button class="btn btn-success" ng-click="initCloudData()">Fill Data</button>
 </div>
 <div class="col-md-9">
     <tabset>
         <tab heading="新文章列表">
-            <ul class="list-group list-group-hover list-group-striped">
-                <li class="list-group-item">
+            <ul class="list-group list-group-hover list-group-striped article-list">
+                <li class="list-group-item" ng-repeat="article in newArticles.articles">
                     <div class="row list-group-item-heading">
-                        <div class="col-md-10"><a href="#" class="list-group-item-heading"><h3>标题标题</h3></a></div>
-                        <div class="col-md-2"><a href="#">作者</a></div>
-                        <div class="col-md-2">回复：9</div>
+                        <div class="col-md-10"><a ng-href="art/article/{{article.id}}" class="list-group-item-heading"><h4>{{article.title}}</h4></a></div>
+                        <div class="col-md-2"><a href="#">{{article.author.nick}}</a></div>
+                        <div class="col-md-2">回复：{{article.replycount}}</div>
                     </div>
                     <div class="row list-group-item-text" >
                         <div class="col-md-8">
-                            <a href="#" class="label label-default">Label</a>
-                            <a href="#" class="label label-default">Label</a>
-                            <a href="#" class="label label-default">Label</a>
-                            <a href="#" class="label label-default">Label</a>
+                            <a href="#" class="label label-default" ng-repeat="tag in article.tags">{{tag}}</a>
                         </div>
-                        <div class="col-md-4">发表时间：2014-1-12 01:56:29</div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="row list-group-item-heading">
-                        <div class="col-md-10"><a href="#" class="list-group-item-heading"><h3>标题标题</h3></a></div>
-                        <div class="col-md-2"><a href="#">作者</a></div>
-                        <div class="col-md-2">回复：9</div>
-                    </div>
-                    <div class="row list-group-item-text" >
-                        <div class="col-md-8">
-                            <a href="#" class="label label-default">Label</a>
-                            <a href="#" class="label label-default">Label</a>
-                            <a href="#" class="label label-default">Label</a>
-                            <a href="#" class="label label-default">Label</a>
-                        </div>
-                        <div class="col-md-4">发表时间：2014-1-12 01:56:29</div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="row list-group-item-heading">
-                        <div class="col-md-10"><a href="#" class="list-group-item-heading"><h3>标题标题</h3></a></div>
-                        <div class="col-md-2"><a href="#">作者</a></div>
-                        <div class="col-md-2">回复：9</div>
-                    </div>
-                    <div class="row list-group-item-text" >
-                        <div class="col-md-8">
-                            <a href="#" class="label label-default">Label</a>
-                            <a href="#" class="label label-default">Label</a>
-                            <a href="#" class="label label-default">Label</a>
-                            <a href="#" class="label label-default">Label</a>
-                        </div>
-                        <div class="col-md-4">发表时间：2014-1-12 01:56:29</div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="row list-group-item-heading">
-                        <div class="col-md-10"><a href="#" class="list-group-item-heading"><h3>标题标题</h3></a></div>
-                        <div class="col-md-2"><a href="#">作者</a></div>
-                        <div class="col-md-2">回复：9</div>
-                    </div>
-                    <div class="row list-group-item-text" >
-                        <div class="col-md-8">
-                            <a href="#" class="label label-default">Label</a>
-                            <a href="#" class="label label-default">Label</a>
-                            <a href="#" class="label label-default">Label</a>
-                            <a href="#" class="label label-default">Label</a>
-                        </div>
-                        <div class="col-md-4">发表时间：2014-1-12 01:56:29</div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="row list-group-item-heading">
-                        <div class="col-md-10"><a href="#" class="list-group-item-heading"><h3>标题标题</h3></a></div>
-                        <div class="col-md-2"><a href="#">作者</a></div>
-                        <div class="col-md-2">回复：9</div>
-                    </div>
-                    <div class="row list-group-item-text" >
-                        <div class="col-md-8">
-                            <a href="#" class="label label-default">Label</a>
-                            <a href="#" class="label label-default">Label</a>
-                            <a href="#" class="label label-default">Label</a>
-                            <a href="#" class="label label-default">Label</a>
-                        </div>
-                        <div class="col-md-4">发表时间：2014-1-12 01:56:29</div>
+                        <div class="col-md-4">发表时间：{{article.addtimestring}}</div>
                     </div>
                 </li>
             </ul>
         </tab>
         <tab heading="热门文章列表">
-            hot articles
+            <ul class="list-group list-group-hover list-group-striped">
+                <li class="list-group-item" ng-repeat="article in hotArticles.articles">
+                    <div class="row list-group-item-heading">
+                        <div class="col-md-10"><a ng-href="art/article/{{article.id}}" class="list-group-item-heading"><h4>{{article.title}}</h4></a></div>
+                        <div class="col-md-2"><a href="#">{{article.author.nick}}</a></div>
+                        <div class="col-md-2">回复：{{article.replycount}}</div>
+                    </div>
+                    <div class="row list-group-item-text" >
+                        <div class="col-md-8">
+                            <a href="#" class="label label-default" ng-repeat="tag in article.tags">{{tag}}</a>
+                        </div>
+                        <div class="col-md-4">发表时间：{{article.addtimestring}}</div>
+                    </div>
+                </li>
+            </ul>
         </tab>
         <tab heading="网站公告">
             notices
