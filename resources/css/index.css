@@ -42,7 +42,7 @@ body{
 
 .list-group-striped > .list-group-item:nth-child(odd),
 .list-group-striped > .list-group-item:nth-child(odd) {
-    background-color: #f5f5f5;
+    background-color: #f0f0f0;
 }
 
 .list-group-hover > .list-group-item.active .list-group-item-text,
@@ -55,4 +55,18 @@ body{
 .list-group-hover > .list-group-item:focus {
     text-decoration: none;
     background-color: #e1edf7;
+}
+
+.col-centered{
+    float: none;
+    text-align: center;
+}
+.friend-link{
+
+}
+.friend-link .friend-link-title{
+    background: #e0e0e0;
+}
+.friend-link img{
+    width: 150px;
 }

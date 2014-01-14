@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>佚博客</title>
-
     <script data-main="src/scripts/index" src="src/scripts/vendor/require.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="resources/icheck/all.css">
@@ -34,7 +33,7 @@
                         <li><a href="#">文章</a></li>
                         <li><a href="#">精华</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">子站入口<b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">应用<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">开源中心</a></li>
                                 <li class="divider"></li>
@@ -76,7 +75,16 @@
         <div ng-view></div>
     </div>
     <div class="row">
-        <div class="span12">
+        <div class="col-md-12 col-centered friend-link">
+            <div class="col-md-12 friend-link-title">友情链接</div>
+            <a href="http://www.iteye.com/" target="_blank" tooltip="iteye"><img src="resources/images/friends/iteye.gif"></a>
+            <a href="http://www.skynj.com/" target="_blank" tooltip="擎天科技"><img src="resources/images/friends/skytech-blue.png"></a>
+        </div>
+        <hr/>
+        <div class="col-md-12 col-centered">
+            <span>Copyright YixBlog.cn 苏ICP证xxxx号</span>
+            <a href="accountservice/adminaccount/login.htm" target="_blank">[后台管理]</a>
+            <a href="mailto:davepotter@163.com" target="_blank">[联系站长]</a>
         </div>
     </div>
 </div>
